@@ -18,7 +18,7 @@ for (let i = 0; i < count; i++) {
     const sortDesc = (a, b) => b - a;
     dataMatin.sort(sortDesc);
     
-    console.log(dataMatin);
+    //document.write(dataMatin);
 }
 bestValueMatin = dataMatin[0];
 
@@ -32,22 +32,22 @@ for (let i = 0; i < count; i++) {
     const sortDesc = (a, b) => b - a;
     dataSoir.sort(sortDesc);
     
-    console.log(dataSoir);
+    //document.write(dataSoir);
 }
 
 bestValueSoir = dataSoir[0];
 
 
-console.log("La meilleur valeur du matin est " + bestValueMatin);
-console.log("La meilleur valeur du soir est " + bestValueSoir);
+document.write("La valeur d'une action ce matin est " + bestValueMatin + "€<br>");
+document.write("La valeur d'une action de ce soir est " + bestValueSoir + "€<br>");
 
 
 if (bestValueMatin > bestValueSoir){
     let difference = bestValueMatin - bestValueSoir;
-    console.log("Aujourd'hui, ce n'est pas intéressant d'acheter une action. Vous allez perdre " + difference +"€")
+    document.write("Aujourd'hui, ce n'est pas intéressant d'acheter une action.<br> Vous allez perdre " + difference +"€")
 }
 
 if (bestValueSoir > bestValueMatin){
     let difference = bestValueSoir - bestValueMatin;
-    console.log("Aujourd'hui, vous allez gagner " + difference +"€")
+    document.write("Aujourd'hui, vous allez gagner " + difference +"€")
 }
