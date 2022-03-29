@@ -14,9 +14,8 @@ for (let i = 0; i < count; i++) {
     let actions = Math.floor((Math.random() * 1500 + 1));
     dataMatin.push(actions);
 
-    // Classe le tableau par ordre décroissant
-    const sortDesc = (a, b) => b - a;
-    dataMatin.sort(sortDesc);
+    // Classe le tableau par ordre croissant le matin
+     dataMatin.sort();
     
     //document.write(dataMatin);
 }
@@ -28,7 +27,7 @@ for (let i = 0; i < count; i++) {
     let actions = Math.floor((Math.random() * 1500 + 1));
     dataSoir.push(actions);
 
-    // Classe le tableau par ordre décroissant
+    // Classe le tableau par ordre décroissant le soir
     const sortDesc = (a, b) => b - a;
     dataSoir.sort(sortDesc);
     
