@@ -37,8 +37,8 @@ for (let i = 0; i < count; i++) {
 bestValueSoir = dataSoir[0];
 
 
-document.write("La valeur d'une action ce matin est " + bestValueMatin + "€<br>");
-document.write("La valeur d'une action de ce soir est " + bestValueSoir + "€<br>");
+document.write("La valeur minimum d'une action ce matin est " + bestValueMatin + "€<br>");
+document.write("La valeur maximum d'une action de ce soir est " + bestValueSoir + "€<br>");
 
 
 if (bestValueMatin > bestValueSoir){
