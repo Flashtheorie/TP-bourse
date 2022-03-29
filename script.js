@@ -15,11 +15,12 @@ for (let i = 0; i < count; i++) {
     dataMatin.push(actions);
 
     // Classe le tableau par ordre croissant le matin
-     dataMatin.sort();
+    // dataMatin.sort();
     
-    //document.write(dataMatin);
+    console.log(dataMatin);
+    bestValueMatin = Math.min(dataMatin[i]);
 }
-bestValueMatin = dataMatin[0];
+
 
 // Suivi des prix des actions le soir
 
